@@ -33,6 +33,9 @@ echo "$plistContent" > "$plistPath"
 echo "$plistContent" 
 echo "$plistPath"
 
+chmod +r "$plistPath"
+
+
 # Load the task into Launchd
 launchctl load "$plistPath"
 
