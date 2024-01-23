@@ -22,10 +22,6 @@ plistContent=$(cat <<EOF
     </array>
     <key>RunAtLoad</key>
     <true/>
-    <key>StandardErrorPath</key>
-    <string>./</string>
-    <key>StandardOutPath</key>
-    <string>./</string>
     <key>StartInterval</key>
     <integer>30</integer>
   </dict>
