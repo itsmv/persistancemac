@@ -16,16 +16,12 @@ plistContent=$(cat <<EOF
     <string>com.example.playsound_mac</string>
     <key>ProgramArguments</key>
     <array>
-      <string>/bin/bash</string>
-      <string>"$scriptPath"</string>
+      <string>sh</string>
+      <string>-c</string>
+      <string>./playsound_mac.sh</string>
     </array>
-    <key>StartCalendarInterval</key>
-    <dict>
-      <key>Minute</key>
-      <integer>$(date -v +1M "+%-M")</integer>
-      <key>Hour</key>
-      <integer>$(date "+%-H")</integer>
-    </dict>
+    <key>StartInterval</key>
+    <integer>3600</integer>
   </dict>
 </plist>
 EOF
