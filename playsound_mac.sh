@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Path to a silent audio file (you can create an empty audio file)
 silent_audio="/path/to/silent.wav"
