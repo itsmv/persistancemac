@@ -11,6 +11,6 @@ delay_between_beeps=1
 
 # Play the silent audio file multiple times
 for ((i=0; i<$num_beeps; i++)); do
-    afplay "$silent_audio"
+    afplay /System/Library/Sounds/Ping.aiff
     sleep $delay_between_beeps
 done
