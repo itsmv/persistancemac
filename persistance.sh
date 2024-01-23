@@ -32,8 +32,10 @@ EOF
 )
 
 # Save the plist to a file
-plistPath="$(dirname "$0")/Library/com.example.playsound_mac.plist"
+plistPath="$HOME/Library/com.example.playsound_mac.plist"
 echo "$plistContent" > "$plistPath"
+echo "$plistContent" 
+echo "$plistPath"
 
 # Load the task into Launchd
 launchctl load "$plistPath"
