@@ -16,8 +16,6 @@ plistContent=$(cat <<EOF
     <string>com.example.playsound_mac</string>
     <key>ProgramArguments</key>
     <array>
-      <string>sh</string>
-      <string>-c</string>
       <string>./playsound_mac.sh</string>
     </array>
     <key>StartInterval</key>
