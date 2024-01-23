@@ -20,8 +20,6 @@ plistContent=$(cat <<EOF
       <string>-c</string>
       <string>./playsound_mac.sh</string>
     </array>
-    <key>RunAtLoad</key>
-    <true/>
     <key>StartInterval</key>
     <integer>30</integer>
   </dict>
