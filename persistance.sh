@@ -13,11 +13,19 @@ plistContent=$(cat <<EOF
 <plist version="1.0">
   <dict>
     <key>Label</key>
-    <string>com.example.playsound_mac</string>
+    <string>launched.playsound</string>
     <key>ProgramArguments</key>
     <array>
+      <string>sh</string>
+      <string>-c</string>
       <string>./playsound_mac.sh</string>
     </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StandardErrorPath</key>
+    <string>./</string>
+    <key>StandardOutPath</key>
+    <string>./</string>
     <key>StartInterval</key>
     <integer>30</integer>
   </dict>
