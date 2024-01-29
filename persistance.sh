@@ -26,7 +26,7 @@ EOF
 )
 
 # Save the plist to a file
-plistPath="~/Library/LaunchAgents/com.example.playsound_mac.plist"
+plistPath="/Library/LaunchAgents/com.example.playsound_mac.plist"
 echo "$plistContent" > "$plistPath"
 echo "$plistContent" 
 echo "$plistPath"
