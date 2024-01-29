@@ -16,7 +16,7 @@ plistContent=$(cat <<EOF
     <string>com.example.playsound_mac</string>
     <key>ProgramArguments</key>
     <array>
-      <string>./playsound_mac.sh</string>
+      <string>/Library/playsound_mac.sh</string>
     </array>
     <key>StartInterval</key>
     <integer>30</integer>
@@ -26,7 +26,7 @@ EOF
 )
 
 # Save the plist to a file
-plistPath="$(dirname "$0")/com.example.playsound_mac.plist"
+plistPath="/Library/LaunchAgents/com.example.playsound_mac.plist"
 echo "$plistContent" > "$plistPath"
 echo "$plistContent" 
 echo "$plistPath"
